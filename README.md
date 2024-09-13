@@ -1,8 +1,9 @@
-# Simple Free-Look Camera
+# PlatformerController2D for C# targetting Godot 3.x
 A Godot >=3.5 C# implementation of the PlatformerController2D found in the AssetStore:
 
 ## Original description:
 Submitted by user evpevdev; MIT; 2023-05-07
+
 https://godotengine.org/asset-library/asset/1062
 
 Ported from [Evan Barac's Godot 4.0 version](https://github.com/Ev01/PlatformerController2D),
