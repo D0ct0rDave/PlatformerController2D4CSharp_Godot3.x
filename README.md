@@ -1,16 +1,15 @@
-# PlatformerController2D for C# targeting Godot 3.x
+# Simple Free-Look Camera
 A Godot >=3.5 C# implementation of the PlatformerController2D found in the AssetStore:
 
 ## Original description:
 Submitted by user evpevdev; MIT; 2023-05-07
-
 https://godotengine.org/asset-library/asset/1062
 
 Ported from [Evan Barac's Godot 4.0 version](https://github.com/Ev01/PlatformerController2D),
 
 This is a platformer class with many tweakable settings which can be used to control a 2D character (think supermario 1).
 
-## Features
+##Features
 - Double jump
 - Coyote time
 - Jump buffer
