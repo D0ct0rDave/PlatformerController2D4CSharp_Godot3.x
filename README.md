@@ -10,7 +10,7 @@ Ported from [Evan Barac's Godot 4.0 version](https://github.com/Ev01/PlatformerC
 
 This is a platformer class with many tweakable settings which can be used to control a 2D character (think supermario 1).
 
-##Features
+## Features
 - Double jump
 - Coyote time
 - Jump buffer
