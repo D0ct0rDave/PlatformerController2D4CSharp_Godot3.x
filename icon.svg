@@ -46,8 +46,8 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:zoom="1.4142136"
-     inkscape:cx="115.01519"
-     inkscape:cy="119.70742"
+     inkscape:cx="42.648959"
+     inkscape:cy="129.21568"
      inkscape:window-x="66"
      inkscape:window-y="41"
      inkscape:window-maximized="0"
@@ -272,7 +272,7 @@
        y="178.49092"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:30.69973564px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Bold';fill:#ffffff;stroke:#9955ff;stroke-width:4.11157179;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers">3.6</tspan></text>
   <path
-     d="m 86,42.999999 h 4 L 90.244501,70.897748 104,71 v 14 h 28 V 99 L 90.244501,98.875 v -14 0 L 76,85 75.75,70.875 76,71 V 42.999999 h 9 z"
+     d="m 86,28.999999 h 4 L 90.244501,56.897748 104,57 v 14 h 28 V 85 L 90.244501,84.875 v -14 0 L 76,71 75.75,56.875 76,57 V 28.999999 h 9 z"
      id="path22-8"
      style="fill:#552200"
      inkscape:connector-curvature="0"
