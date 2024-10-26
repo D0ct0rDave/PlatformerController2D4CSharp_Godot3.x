@@ -5,10 +5,13 @@ public partial class PlatformerController2D : KinematicBody2D
 {
 	[Signal]
 	public delegate void jumped(bool isGroundJump);
-
 	[Signal]
 	public delegate void hitGround();
-
+	[Signal]
+	public delegate void onDirectionChanged(float direction);
+	[Signal]
+	public delegate void onVelocityChanged(Vector2 velocity);
+	
 	// Set these to the name of your action (in the Input Map)
 	// Name of input action to move left.
 	[Export]
@@ -208,6 +211,8 @@ public partial class PlatformerController2D : KinematicBody2D
 	{
 		try
 		{
+			Vector2 oldVelocity = Velocity;
+
 			if (IsCoyoteTimerRunning() || (_currentJumpType == JumpType.NONE))
 			{
 				_jumpsLeft = MaxJumpAmount;
@@ -254,6 +259,15 @@ public partial class PlatformerController2D : KinematicBody2D
 			if (IsFeetOnGround())
 			{
 				Velocity = new Vector2(Velocity.x, 0.0f);
+			}
+			if (Velocity != oldVelocity)
+			{
+				EmitSignal(nameof(onVelocityChanged), Velocity);
+				
+				if (Math.Sign(Velocity.x) != Math.Sign(oldVelocity.x))
+				{
+					EmitSignal(nameof(onDirectionChanged), (Velocity.x < 0.0f)? -1.0f : 1.0f);
+				}				
 			}
 		}
 		catch (Exception ex)
